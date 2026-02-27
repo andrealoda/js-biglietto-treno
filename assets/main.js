@@ -15,10 +15,10 @@ Possiamo testare la logica con i seguenti esempi:
 */
 
 //➡️ Definiamo le variabili che ci serviranno per la logica
-// const welcomeMessage = alert('🧑‍✈️ Benvenuto in NSI, il NUOVO SISTEMA INTELLIGENTE di calcolo del prezzo del biglietto.');
-// const discountMessage = alert('Ti ricordiamo che se hai meno di 18 o più di 65 anni avrai diritto a uno sconto!');
-// const tripKm = prompt('indica quanti kilometri vuoi percorrere');
-// const passengerAge = prompt('indica la tua età');
+const welcomeMessage = alert('🧑‍✈️ Benvenuto in NSI, il NUOVO SISTEMA INTELLIGENTE di calcolo del prezzo del biglietto.');
+const discountMessage = alert('Ti ricordiamo che se hai meno di 18 o più di 65 anni avrai diritto a uno sconto!');
+const tripKm = prompt('indica quanti kilometri vuoi percorrere');
+const passengerAge = prompt('indica la tua età');
 const costKm = 0.21;
 const ticketCalc = tripKm * costKm;
 
@@ -32,11 +32,14 @@ const ticketCalc = tripKm * costKm;
 
 if (passengerAge < 18) {
     const ticketPrice = ticketCalc * 0.8;
+    document.getElementById('price').textContent = ticketPrice.toFixed(2);
     console.log(tripKm, passengerAge, ticketPrice.toFixed(2)); //utilizziamo il console.log per verificare i valori immessi dall'utente
 } else if (passengerAge > 65) {
     const ticketPrice = ticketCalc * 0.6;
+    document.getElementById('price').textContent = ticketPrice.toFixed(2);
     console.log(tripKm, passengerAge, ticketPrice.toFixed(2)); //utilizziamo il console.log per verificare i valori immessi dall'utente
 } else {
     const ticketPrice = ticketCalc;
+    document.getElementById('price').textContent = ticketPrice.toFixed(2);
     console.log(tripKm, passengerAge, ticketPrice.toFixed(2)); //utilizziamo il console.log per verificare i valori immessi dall'utente
 }
