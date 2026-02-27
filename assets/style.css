@@ -6,7 +6,7 @@
 
 body {
     min-height: 100vh;
-    background: linear-gradient(180deg,rgba(224, 224, 224, 1) 50%, rgba(79, 73, 70, 1) 100%);
+    background: linear-gradient(180deg,rgba(224, 224, 224, 1) 50%, rgb(240, 203, 185) 100%);
     background-size: cover;
 }
 
