@@ -27,3 +27,16 @@ const ticketCalc = tripKm * costKm;
 - lo sconto del 20% per i minorenni equivale all'80% del prezzo del biglietto intero
 - lo sconto del 40% per gli over65 equivale al 60% del prezzo del biglietto intero.
 */
+
+// MODELLO DI LOGICA
+
+if (passengerAge < 18) {
+    const ticketPrice = ticketCalc * 0.8;
+    console.log(tripKm, passengerAge, ticketPrice.toFixed(2)); //utilizziamo il console.log per verificare i valori immessi dall'utente
+} else if (passengerAge > 65) {
+    const ticketPrice = ticketCalc * 0.6;
+    console.log(tripKm, passengerAge, ticketPrice.toFixed(2)); //utilizziamo il console.log per verificare i valori immessi dall'utente
+} else {
+    const ticketPrice = ticketCalc;
+    console.log(tripKm, passengerAge, ticketPrice.toFixed(2)); //utilizziamo il console.log per verificare i valori immessi dall'utente
+}
