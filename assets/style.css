@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(180deg,rgba(224, 224, 224, 1) 50%, rgba(79, 73, 70, 1) 100%);
+    background-size: cover;
+}
+
+.container {
+    margin: 3rem;
+    padding: 1rem;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.ticket {
+    display: flex;
+    justify-content: center;
+}
+
+.ticket-img {
+    width: 80%;
+}
+
+.price-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#price {
+    font-size: x-large;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 489px) {
+
+    .title,
+    .title-sentence {
+        font-size: small;
+    }
+}

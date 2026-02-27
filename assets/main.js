@@ -14,11 +14,11 @@ Possiamo testare la logica con i seguenti esempi:
 - 100km / 70 anni / 12.60€
 */
 
-// ➡️ Definiamo le variabili che ci serviranno per la logica
-const welcomeMessage = alert('🧑‍✈️ Benvenuto in NSI, il NUOVO SISTEMA INTELLIGENTE di calcolo del prezzo del biglietto.');
-const discountMessage = alert('Ti ricordiamo che se hai meno di 18 o più di 65 anni avrai diritto a uno sconto!');
-const tripKm = prompt('indica quanti kilometri vuoi percorrere');
-const passengerAge = prompt('indica la tua età');
+//➡️ Definiamo le variabili che ci serviranno per la logica
+// const welcomeMessage = alert('🧑‍✈️ Benvenuto in NSI, il NUOVO SISTEMA INTELLIGENTE di calcolo del prezzo del biglietto.');
+// const discountMessage = alert('Ti ricordiamo che se hai meno di 18 o più di 65 anni avrai diritto a uno sconto!');
+// const tripKm = prompt('indica quanti kilometri vuoi percorrere');
+// const passengerAge = prompt('indica la tua età');
 const costKm = 0.21;
 const ticketCalc = tripKm * costKm;
 
