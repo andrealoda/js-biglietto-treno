@@ -26,7 +26,7 @@ body {
 }
 
 .ticket-img {
-    width: 80%;
+    max-width: 80%;
 }
 
 .price-box {
@@ -43,7 +43,8 @@ body {
 @media screen and (max-width: 489px) {
 
     .title,
-    .title-sentence {
+    .title-sentence,
+    #price {
         font-size: small;
     }
 }
