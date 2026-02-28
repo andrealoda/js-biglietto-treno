@@ -17,8 +17,8 @@ Possiamo testare la logica con i seguenti esempi:
 //➡️ Definiamo le variabili che ci serviranno per la logica
 const welcomeMessage = alert('🧑‍✈️ Benvenuto in NSI, il NUOVO SISTEMA INTELLIGENTE di calcolo del prezzo del biglietto.');
 const discountMessage = alert('Ti ricordiamo che se hai meno di 18 o più di 65 anni avrai diritto a uno sconto!');
-const tripKm = prompt('indica quanti kilometri vuoi percorrere');
-const passengerAge = prompt('indica la tua età');
+const tripKm = Number(prompt('indica quanti kilometri vuoi percorrere'));
+const passengerAge = Number(prompt('indica la tua età'));
 const costKm = 0.21;
 const ticketCalc = tripKm * costKm;
 
